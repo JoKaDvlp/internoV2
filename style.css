@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;500;700&display=swap');
+
+/* GENERAL */ 
+
+:root {
+    --primary1:#CDA274;
+    --primary2:#292F36;
+    --primary3:#4D5053;
+    --primary4:#F4F0EC;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    color: var(--primary2);
+    font-size: 5rem;
+    width: 100%;
+}
+
+.h1Reduit {
+    font-size: 3rem;
+    width: fit-content;
+    background-color: white;
+    padding: 30px 100px;
+    border-radius: 30px 30px 0 0;
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+    color: var(--primary2);
+    font-size: 3rem;
+    width: 100%;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: 'DM Serif Display', serif;
+    color: var(--primary2);
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+p {
+    color: var(--primary3);
+   
+    line-height: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary2);
+}
+
+a :visited , :link , :focus {
+    color: var(--primary2);
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: var(--primary2);
+    width: fit-content;
+    border-radius: 10px;
+    display: block;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Jost', regular;
+    font-weight: 700;
+}
+
+button ::user-valid{
+    color: white;
+}
+button span {
+    color: var(--primary1);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paddings {
+    padding: 5% 15%;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.itemCenter {
+    align-items: center;
+}
+
+.txtCenter {
+    text-align: center;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+
+/* HEADER */ 
+
+header {
+    padding: 0 15%;
+    height: 7vh;
+    position: sticky; /*rester coller selon une position top, right, left et bottom donnée */ 
+    top:0;
+    background-color: white;
+    box-shadow: 0px 2px 5px var(--primary4); /* valeurs : x, y, blur, color */
+}
+
+header img {
+    width: 15%;
+}
+
+header nav {
+    width: 40%;
+}
+
+
+/* INDEX */
+/* HERO */ 
+
+.hero {
+    height: 93vh;
+    background-image: url('assets/banniere.png');
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 0 0 0 200px;
+}
+
+.hero div {
+    width: 40%;
+    margin-left:15%;
+}
+
+
+/* A PROPOS */
+
+.apropos div {
+    width: 26%;
+}
+
+/* CONTACT */
+
+.contact img {
+    width: 40%;
+    border-radius: 0 180px 0 80px;
+}
+
+.contact div {
+    width: 30%;
+}
+
+address {
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.iconTel {
+    background-color: var(--primary4);
+    width:50px;
+    height:50px;
+    justify-content: center;
+    border-radius: 50%;
+    color:var(--primary1);
+}
+
+.contact address span {
+    font-weight: 700 ;
+}
+
+/* AVIS */
+
+.containerAvis {
+    width: 90%;
+    background-color: var(--primary4);
+    border-radius: 20px;
+    padding:3% 5%;
+}
+
+
+.carteAvis {
+    width: 20%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+.carteAvis img {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.carteAvis div {
+    gap: 16px;
+}
+
+.avis span {
+    font-family: 'DM Serif Display', serif;
+    color: var(--primary2);
+    font-size: 1.2rem;
+}
+
+
+/* PARTENAIRES */ 
+.partenaires {
+    justify-content: space-evenly;
+}
+
+.partenaires a {
+    width: 8%;
+}
+
+.partenaires a img {
+    width: 100%;
+}
+
+/* PROJETS */
+
+.carteProjet {
+    width: 40%;
+    margin-top: 8%;
+    gap: 1.5rem;
+}
+
+.carteProjet img {
+    width: 100%;
+}
+
+.carteProjet p {
+    margin: 0;
+}
+
+.projets p {
+    width: 100%;
+}
+
+.cuisine img {
+    border-radius: 0 80px 0 0;
+}
+
+.entree img {
+    border-radius:  80px 0 0 0;
+}
+
+.bureau img {
+    border-radius:  0 0 80px 0;
+}
+
+.salon img{
+    border-radius:  0 0 0 80px;
+}
+
+
+.carteProjet a {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary4);
+    border-radius: 50%;
+    color: var(--primary2);
+    justify-content: center;
+}
+
+/* Newsletter */
+
+.contentNewsletter{
+    background-color: var(--primary2);
+    border-radius: 20px;
+    padding: 3% 5%;
+    width: 80%;
+    margin: auto;
+}
+
+.contentNewsletter h2 {
+    color: white;
+}
+
+.contentNewsletter p {
+    width: 100%;
+    color: white;
+}
+
+.contentNewsletter div input {
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    padding:0 5px;
+}
+
+.contentNewsletter div {
+    margin: auto;
+    width:fit-content;
+}
+
+
+/* PAGE SERVICES */
+
+/* HERO SERVICES */
+
+.heroServices {
+    background-image: url(assets_services/Photo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    align-content: flex-end;
+}
+
+/* SECTION COMPETENCES */
+
+
+.competence {
+    width: 30%;
+}
+
+/* SECTION ETAPES */
+
+.sectionEtapes {
+    background-color: var(--primary4);
+    padding: 10% 10%;
+    border-radius: 60px;
+}
+
+.sectionEtapes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.etape {
+    padding: 5% 0;
+}
+
+.etape img {
+    border-radius: 0 100px 0 300px;
+}
+
+.etape div {
+    width: 45%;
+    align-content: space-around;
+    margin: auto 0;
+}
+
+.numEtape {
+    font-size: 7rem;
+    font-family: 'DM Serif Display', serif;
+    text-align: right;
+    color: var(--primary1);
+    margin-top: 0;
+}
+
+.rowReverse {
+    flex-direction: row-reverse;
+}
+
+
+/* PAGE PROJETS */
+
+/* HERO PROJETS */
+
+.heroProjets {
+    background-image: url(assets_projets/baniere-projet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    align-content: flex-end;
+}
+
+/* MAIN PROJETS */
+
+.cartePageProjet {
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.cartePageProjet img {
+    width: 100%;
+}
+
+.cartePageProjet p {
+    margin: 0;
+}
+
+.cartePageProjet a {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary4);
+    border-radius: 50%;
+    color: var(--primary2);
+    justify-content: center;
+}
+
+/* Grille projet 2col lign auto */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 80px;
+    grid-auto-rows: auto;
+}
+
+.projetLarge {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+.projetRadius img {
+    border-radius: 50px;
+}
+
+.projetRadiusLarge img {
+    border-radius: 50px 50px 50px 320px;
+}
+
+
+
+/* FOOTER */ 
+footer {
+    gap: 16px;
+    padding: 2% 15%;
+}
+.left{
+    width: 25%;
+    flex-direction: column;
+}
+
+.left nav {
+    width: 50%;
+}
+.left img {
+    width: 35%;
+}
+
+.copyright {
+    width: 100%;
+    margin-top: 5%;
+}
+
+/* Version smartphone */
+@media screen and (max-width: 575px){
+   /*GENERAL*/
+    .paddings {
+        padding: 10% 5%;
+   }
+   
+    /*HERO*/
+   h1 {
+        font-size: 4rem;
+   }
+
+   /*ABOUT*/
+   .apropos div {
+        width: 100%;
+   }
+
+   /*CONTACT*/
+   .contact div {
+        width: 100%;
+   }
+   
+   h2 {
+        font-size: 1.5rem;
+   }
+
+   /*AVIS*/  
+   .carteAvis {
+        width: 100%;
+        margin: 5% 0;
+   }
+
+   /*PARTENAIRES*/
+   .partenaires {
+        justify-content: none;
+        gap: 40px;
+   }
+   .partenaires a {
+        width: 30%;
+   }
+
+   /*PROJETS*/
+   .carteProjet {
+        width: 100%;
+        margin-top: 40px;
+   }
+}

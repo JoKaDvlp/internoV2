@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interno</title>
+
+    <!-- Lien vers style.css, normalize.css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+
+    <!-- script vers fotnawesome-->
+    <script src="https://kit.fontawesome.com/8276700845.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        
+    <!-- HEADER -->
+    <header class="flex spaceBetween itemCenter">
+        <img src="./assets/interno-logo.png" alt="logo d'interno" title="image du logo interno">
+
+        <nav class="flex spaceBetween">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="projets.html">Projets</a>
+            <a href="contact.html">Contact</a>
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="heroServices flex justifyCenter">
+
+            <h1 class="h1Reduit">Services</h1>
+
+    </section>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- SECTION COMPETENCES-->
+        <section class="conteneurCompetences paddings flex spaceBetween">
+
+            <!-- COMPETENCE GAUCHE -->
+            <div class="competence flex justifyCenter txtCenter">
+                <h3>Conception de plan</h3>
+                <p>There are many variations of the passages of lorem Ipsum from available, majority</p>
+                <button>En savoir plus <span>➜</span></button>
+            </div>
+
+            <!-- COMPETENCE MILIEU -->
+            <div class="competence flex justifyCenter txtCenter">
+                <h3>Design d'intérieur</h3>
+                <p>There are many variations of the passages of lorem Ipsum from available, majority</p>
+                <button>En savoir plus <span>➜</span></button>
+            </div>
+
+            <!-- COMPETENCE DROITE -->
+            <div class="competence flex justifyCenter txtCenter">
+                <h3>2d/3d</h3>
+                <p>There are many variations of the passages of lorem Ipsum from available, majority</p>
+                <button>En savoir plus <span>➜</span></button>
+            </div>
+
+        </section>
+
+        <!-- SECTION ETAPES -->
+        <section class=" paddings">
+
+            <div class="sectionEtapes">
+                <h2>Comment nous travaillons</h2>
+                <p class="txtCenter">
+                    It is a long established fact will be distracted. Lorem Ispum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                <div class="contenantEtapes flex" >
+                    <!-- etape 1 -->
+                    <div class="etape flex spaceBetween">
+                        <img src="assets_services/01.png" alt="Photo d'un homme et d'une femme devant un ordinateur" title="Photo d'un homme et d'une femme devant un ordinateur">
+                        <div>
+                            <p class="numEtape">01</p>
+                            <h3>Conception</h3>
+                            <p>It is a long established fact will be distracted. Lorem Ispum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+
+                    <!-- etape 2 -->
+                    <div class="etape flex spaceBetween rowReverse">
+                        <img src="assets_services/02.png" alt="Photo d'un homme et d'une femme" title="Photo d'un homme et d'une femme">
+                        <div>
+                            <p class="numEtape">02</p>
+                            <h3>Idéation</h3>
+                            <p>It is a long established fact will be distracted. Lorem Ispum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+
+                    <!-- etape 3 -->
+                    <div class="etape flex spaceBetween">
+                        <img src="assets_services/03.png" alt="Photo d'une cuisine" title="Photo d'une cuisine">
+                        <div>
+                            <p class="numEtape">03</p>
+                            <h3>Design</h3>
+                            <p>It is a long established fact will be distracted. Lorem Ispum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+
+                    <!-- etape 4 -->
+                    <div class="etape flex spaceBetween rowReverse">
+                        <img src="assets_services/04.png" alt="Photo d'un plan de travail de cuisine" title="Photo d'un plan de travail de cuisine">
+                        <div>
+                            <p class="numEtape">04</p>
+                            <h3>Réalisation</h3>
+                            <p>It is a long established fact will be distracted. Lorem Ispum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    
+        <!-- section newsletter -->
+        <section class="newsletter paddings">
+            <div class="contentNewsletter txtCenter">
+                <h2> Rejoignez la communauté interno</h2>
+                <p> Inscrivez-vous à notre newsletter</p>
+
+                <div class="flex">
+                    <input type="email" pattern=".+exemple/.com" required placeholder="john.doe@gmail.com">
+                    <button type="submit">S'inscrire</button> 
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- FOOTER -->
+    <footer class=" flex">
+        <!-- colonne de gauche -->
+        <div class="flex left ">
+            <img src="assets/interno-logo.png" alt="logo interno" title="logo interno">   
+            <p>Prêt à tous changer ? contactez nous dès aujourd'hui pour plannifiez un rendez-vous !</p>
+            <nav class="flex spaceBetween">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </nav>    
+
+        </div>
+        
+        <!-- colonne de droite -->
+        <div class="flex">
+            <h3>Contact</h3>
+            <p> 55 rue des coquelicots <br> 69000 LYON</p>
+            <address>
+                <a href="mailto:contact@interno.com">contact@interno.com</a> <br><br>
+                <a href="tel:+6523656">06523656</a>
+            </address>
+        </div>
+
+        <!-- copyright -->
+        <a href="" class="copyright txtCenter">Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</a>
+    </footer>
+
+</body>
